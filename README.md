@@ -61,7 +61,41 @@ Unlike generic Claude AI guidelines, this document:
 
 ## 🚀 Quick Start
 
-### For Claude AI Users
+### Option 1: Automatic Enforcement (Recommended)
+
+**Want Claude to automatically follow these rules? Install our MCP connector:**
+
+```bash
+npx @optimaquantum/claude-critical-rules-mcp
+```
+
+Add to your `claude_desktop_config.json`:
+
+**macOS:** `~/Library/Application\ Support/Claude/claude_desktop_config.json`  
+**Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+
+```json
+{
+  "mcpServers": {
+    "critical-rules": {
+      "command": "npx",
+      "args": ["-y", "@optimaquantum/claude-critical-rules-mcp"]
+    }
+  }
+}
+```
+
+**Features:**
+- ✅ Rules always available to Claude
+- ✅ Compliance verification tool
+- ✅ Works in Claude Desktop & Code
+- ✅ Auto-updates
+
+📦 **[View MCP Connector Repository →](https://github.com/optimaquantum/claude-critical-rules-mcp)**
+
+---
+
+### Option 2: Manual Usage
 
 1. **Copy the instructions:** Use [`CRITICAL-RULES.md`](CRITICAL-RULES.md) (English) or [`REGLAS-CRITICAS.md`](REGLAS-CRITICAS.md) (Spanish)
 
