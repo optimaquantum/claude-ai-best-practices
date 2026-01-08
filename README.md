@@ -66,7 +66,7 @@ Unlike generic Claude AI guidelines, this document:
 **Want Claude to automatically follow these rules? Install our MCP connector:**
 
 ```bash
-npx @optimaquantum/claude-critical-rules-mcp
+npx @optima-quantum/claude-critical-rules-mcp-new
 ```
 
 Add to your `claude_desktop_config.json`:
@@ -79,7 +79,7 @@ Add to your `claude_desktop_config.json`:
   "mcpServers": {
     "critical-rules": {
       "command": "npx",
-      "args": ["-y", "@optimaquantum/claude-critical-rules-mcp"]
+      "args": ["-y", "@optima-quantum/claude-critical-rules-mcp-new"]
     }
   }
 }
